@@ -29,6 +29,25 @@
   background-color: #ff8700;
   text-align: left; }
 
+.reveal .slides .right-border {
+  width: 42%;
+  float: right;
+  margin-right: 40px;
+  padding-left: 36px;
+  border-left: 1px solid #222;
+  height: 73%; }
+
+.reveal .slides .right {
+  width: 42%;
+  float: right;
+  margin-right: 40px;
+  padding-left: 37px;
+  height: 73%; }
+
+.reveal .slides .left {
+  width: 40%;
+  float: left; }
+
 .reveal .slides .footer {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 0.3em;
@@ -64,7 +83,7 @@ body {
 
 .reveal {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 42px;
+  font-size: 35px;
   font-weight: normal;
   color: #222; }
 
