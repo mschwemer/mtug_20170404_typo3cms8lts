@@ -106,6 +106,21 @@ $heading4Size: 0.8em;
 	text-align: right;
 }
 
+.reveal .slides .footer .left {
+	text-align: left;
+	margin-left: 66px;
+	padding-top: 8px;
+}
+.reveal .slides .footer .middle {
+	text-align: center;
+}
+.reveal .slides .footer .right {
+	text-align: right;
+	margin-right: 0;
+	width: 25%;
+}
+
+
 .reveal .slides .footer .copyright {
 	display: inline-block;
 	vertical-align: middle;
