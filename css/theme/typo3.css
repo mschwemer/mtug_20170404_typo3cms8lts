@@ -61,7 +61,7 @@
   font-size: 0.40em;
   font-weight: 100;
   color: white;
-  padding: 10px 40px 10px 40px;
+  padding: 10px 0px 10px 0px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -78,17 +78,24 @@
   color: #aaa; }
 
 .reveal .slides .footer .left {
+  float: left;
   text-align: left;
-  margin-left: 66px;
-  padding-top: 8px; }
+  margin-left: 40px;
+  padding-top: 10px;
+  width: 30%; }
 
 .reveal .slides .footer .middle {
-  text-align: center; }
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px 0 0 0; }
 
 .reveal .slides .footer .right {
+  float: left;
   text-align: right;
   margin-right: 0;
-  width: 25%; }
+  width: 30%;
+  padding: 0; }
 
 .reveal .slides .footer .copyright {
   display: inline-block;
