@@ -22,21 +22,21 @@ $backgroundColor: #000;
 $mainColor: #222;
 $headingColor: #222;
 
-$mainFontSize: 35px;
+$mainFontSize: 25px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingFont: 'share-regularregular', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
+$headingTextTransform: none;
 $headingFontWeight: 600;
 $linkColor: #2a76dd;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
-$heading1Size: 1.4em;
-$heading2Size: 1.2em;
-$heading3Size: 1.0em;
-$heading4Size: 0.8em;
+$heading1Size: 1.8em;
+$heading2Size: 1.5em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
 
 
 .reveal .slides > section,
@@ -53,11 +53,22 @@ $heading4Size: 0.8em;
 
 .reveal .slides > section > *,
 .reveal .slides > section > section > * {
-	margin: 20px 0 0 40px;
+	margin: 20px 0  0 40px;
+}
+
+
+.reveal .slides > section > p {
+	margin: 20px 40px 0 40px;
+
 }
 
 .reveal .slides > section > section {
 	margin: 0;
+}
+
+.reveal .slides pre code {
+	height: 100%;
+	max-height: 100%;
 }
 
 .reveal .slides > section h1 {
@@ -69,13 +80,16 @@ $heading4Size: 0.8em;
 
 }
 
+.reveal .slides > section ul {
+	list-style-position: inside;
+}
+
 .reveal .slides .right-border {
 	width: 42%;
 	float: right;
 	margin-right: 40px;
 	padding-left: 36px;
 	border-left: 1px solid #222;
-	height: 73%;
 }
 
 .reveal .slides .right {
@@ -83,7 +97,6 @@ $heading4Size: 0.8em;
 	float: right;
 	margin-right: 40px;
 	padding-left: 37px;
-	height: 73%;
 }
 
 .reveal .slides .left {
@@ -124,6 +137,10 @@ $heading4Size: 0.8em;
 .reveal .slides .footer .copyright {
 	display: inline-block;
 	vertical-align: middle;
+}
+.reveal .slides section img {
+	border: none;
+
 }
 
 .reveal section .footer img {

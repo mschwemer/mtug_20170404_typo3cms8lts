@@ -24,15 +24,1217 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<!-- Startpage -->
 				<section data-transition="fade">
-					<h1>Header</h1>
-					<p>Your content here ...</p>
+					<h1 style="text-align:center;">Münchener TYPO3 User Group </h1>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<h2 style="text-align:center">TYPO3 8 LTS Release</h2>
+					<p>&nbsp;</p>
+					<h3 style="text-align:center">Features und Änderungen</h3>
 					<div class="footer">
-						<div class="left">&copy; XXXX Your Name here</div>
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
 						<div class="middle"></div>
 						<div class="right"><img src="lib/img/typo3-white.svg"></div>
 					</div>
 				</section>
+
+				<!-- Introduction -->
+				<section data-transition="fade">
+					<h1>History</h1>
+					<h2>Releases</h2>
+					<p class="fragment"><span style="width: 50%; display:inline-block">TYPO3 7LTS</span> 10. November 2015 </p>
+					<p class="fragment"><span style="width: 50%; display:inline-block">TYPO3 8.0</span> 22. März 2016</p>
+					<p class="fragment"><span style="width: 50%; display:inline-block">6 weitere Sprint-Releases</span> bis 14. Februar 2017</p>
+					<p class="fragment"><span style="width: 50%; display:inline-block">TYPO3 8LTS</span> 04. April 2017</p>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+					<aside class="notes">
+						<ul>
+							<li>Zeitraum: 7 Sprintrelease => 1 Jahr verteilt</li>
+							<li>ca. alle 6 Wochen 1 Release</li>
+							<li>Ziel: frühe Adaption der neuen Version</li><
+						</ul>
+					</aside>
+				</section>
+					<section data-transition="fade">
+						<h1>Änderungen</h1>
+						<p style="background-color:#cccccc; padding: 5px 0 5px 0;">
+							<span style="width: 15%; text-align:center; display:inline-block">Version</span>
+							<span style="width: 25%; text-align:center; display:inline-block">Feature</span>
+							<span style="width: 25%; text-align:center; display:inline-block">Breaking</span>
+							<span style="width: 25%; text-align:center; display:inline-block">Deprecation</span>
+						</p>
+						<p style="background-color:#efefef;  margin:0 40px 0 40px; padding:5px 0 5px 0;">
+							<span style="width: 15%; text-align:center; display:inline-block">8.0</span>
+							<span style="width: 25%; text-align:center; display:inline-block">24</span>
+							<span style="width: 25%; text-align:center; display:inline-block">97</span>
+							<span style="width: 25%; text-align:center; display:inline-block">28</span>
+						</p>
+						<p style="background-color:#dfdfdf; margin:0 40px 0 40px; padding:5px 0 5px 0;">
+							<span style="width: 15%; text-align:center; display:inline-block">8.1</span>
+							<span style="width: 25%; text-align:center; display:inline-block">15</span>
+							<span style="width: 25%; text-align:center; display:inline-block">11</span>
+							<span style="width: 25%; text-align:center; display:inline-block">8</span>
+						</p>
+						<p style="background-color:#efefef;  margin:0 40px 0 40px; padding:5px 0 5px 0;">
+							<span style="width: 15%; text-align:center; display:inline-block">8.2</span>
+							<span style="width: 25%; text-align:center; display:inline-block">7</span>
+							<span style="width: 25%; text-align:center; display:inline-block">9</span>
+							<span style="width: 25%; text-align:center; display:inline-block">12</span>
+						</p>
+						<p style="background-color:#dfdfdf; margin:0 40px 0 40px; padding:5px 0 5px 0;">
+							<span style="width: 15%; text-align:center; display:inline-block">8.3</span>
+							<span style="width: 25%; text-align:center; display:inline-block">10</span>
+							<span style="width: 25%; text-align:center; display:inline-block">36</span>
+							<span style="width: 25%; text-align:center; display:inline-block">9</span>
+						</p>
+						<p style="background-color:#efefef;  margin:0 40px 0 40px; padding:5px 0 5px 0;">
+							<span style="width: 15%; text-align:center; display:inline-block">8.4</span>
+							<span style="width: 25%; text-align:center; display:inline-block">10</span>
+							<span style="width: 25%; text-align:center; display:inline-block">21</span>
+							<span style="width: 25%; text-align:center; display:inline-block">10</span>
+						</p>
+						<p style="background-color:#dfdfdf; margin:0 40px 0 40px; padding:5px 0 5px 0;">
+							<span style="width: 15%; text-align:center; display:inline-block">8.5</span>
+							<span style="width: 25%; text-align:center; display:inline-block">17</span>
+							<span style="width: 25%; text-align:center; display:inline-block">23</span>
+							<span style="width: 25%; text-align:center; display:inline-block">18</span>
+						</p>
+						<p style="background-color:#efefef;  margin:0 40px 0 40px; padding:5px 0 5px 0;">
+							<span style="width: 15%; text-align:center; display:inline-block">8.6</span>
+							<span style="width: 25%; text-align:center; display:inline-block">49</span>
+							<span style="width: 25%; text-align:center; display:inline-block">41</span>
+							<span style="width: 25%; text-align:center; display:inline-block">18</span>
+						</p>
+						<p style="background-color:#dfdfdf; margin:0 40px 0 40px; padding:5px 0 5px 0;">
+							<span style="width: 15%; text-align:center; display:inline-block">8.7</span>
+							<span style="width: 25%; text-align:center; display:inline-block">10</span>
+							<span style="width: 25%; text-align:center; display:inline-block">7</span>
+							<span style="width: 25%; text-align:center; display:inline-block">38</span>
+						</p>
+						<p class="fragment" style="background-color:#ccc; border-top: 2px solid black; margin:0 40px 0 40px; padding:5px 0 5px 0;">
+							<span style="width: 15%; text-align:center; display:inline-block">Summe</span>
+							<span style="width: 25%; text-align:center; display:inline-block">142</span>
+							<span style="width: 25%; text-align:center; display:inline-block">245</span>
+							<span style="width: 25%; text-align:center; display:inline-block">141</span>
+						</p>
+
+						<div class="footer">
+							<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+							<div class="middle"></div>
+							<div class="right"><img src="lib/img/typo3-white.svg"></div>
+						</div>
+						<aside class="notes">
+							<ul>
+								<li>Ziel: frühe Adaption der neuen Version</li>
+								<li>Jede Menge neuer Features</li>
+								<li>Summe: 387 Features & Breaking</li>
+								<li>Insgesamt: ~3428 commits</li>
+								<li>Focus auf Features</li>
+							</ul>
+						</aside>
+					</section>
+				<section data-transition="fade">
+					<h1>Empfohlenes System-Setup</h1>
+					<ul>
+						<li>PHP: Version 7 oder 7.1 </li>
+						<li>Datenbank: mysql 5.5 oder aktueller</li>
+						<li>Memory-Limit: 128 MB RAM</li>
+						<li>Speicherplatz: 200 MB Festplattenplatz</li>
+						<li>Graphik: IM / GM  Version 6<br /><br /></li>
+						<li class="fragment">PHP Einstellungen
+							<ul>
+								<li>max_execution_time: 240s</li>
+								<li>max_input_vars: 1500</li>
+								<li>PHP opcache</li>
+								<li>apcu-Caching ( > 100MB RAM )</li>
+							</ul>
+						</li>
+
+					</ul>
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>TYPO3 eines der 1. Proj mit php7 Req</li>
+							<li> max_input_vars: php default liegt deutlich niedriger (500 / 1000)</li>
+						</ul>
+					</aside>
+				</section>
+				<section data-transition="fade">
+					<h1>Entfernte System-Extensions</h1>
+						<div>
+							<h2>EXT:rtehtmlarea</h2>
+							<ul>
+								<li>ersetzt durch EXT:rte_ckeditor</li>
+								<li>TER: https://typo3.org/extensions/repository/view/rtehtmlarea</li>
+								<li>Github: https://github.com/FriendsOfTYPO3/rtehtmlarea</li>
+							</ul>
+						<br />&nbsp;<br />
+						</div>
+					<div class="fragment">
+						<h2>EXT:form / EXT:form_legacy</h2>
+						<ul>
+							<li>ersetzt durch neues Form-Framework</li>
+							<li>TER: https://typo3.org/extensions/repository/view/form_legacy</li>
+							<li>Github: https://github.com/FriendsOfTYPO3/form_legacy</li>
+						</ul>
+					</div>
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>Form Framework nicht zu verwechseln mit FormEngine</li>
+						</ul>
+					</aside>
+				</section>
+				<section data-transition="fade">
+					<h1>RTE CKEditor</h1>
+					<div class="left" style="padding:0; height:210px;" >
+						<img src="assets/mtug_2017-04_01_ckeditor.png" style="border: none;"/>
+					</div>
+					<div class="right">
+						<p>seit 8.5 im Core</p>
+						<p>seit 8.6 konfigurierbar & Standard</p>
+					</div>
+					<div class="fragment" style="clear:both;">
+						<h2>Konfiguration in yaml Format</h2>
+						<pre><code class="yaml" style="font-size:0.8em; line-height:1.2em;">
+  imports:
+     - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+     - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+  editor:
+     config:
+        format_tags: "p;h1;h2;h3;pre"
+        toolbarGroups:
+          - { name: clipboard, groups: [clipboard, undo] }
+						</code></pre>
+						<p style="margin-left:45px"><small>Tutorial: https://typo3worx.eu/2017/02/configure-ckeditor-in-typo3/</small></p> </div>
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>RTE Konfig nennt man "Preset"</li>
+							<li>Presets müssen "registriert" werden => ext_localconf.php</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section data-transition="fade">
+					<h1>EXT:form - neue Extension für Formulare</h1>
+					<p style="text-align:center; padding: 40px 0 0 0;">
+						<img src="assets/forms.png" style="border: none;" width="100%;"/>
+					</p>
+
+					<br />
+					<div>
+						Vorstellung durch Peter Kraume<br />
+						<small>https://de.slideshare.net/pk77/frontend-formulare-in-typo3-8-lts</small>
+					</div>
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section data-transition="fade">
+					<h1>Backend UI - Modul "Seite"</h1>
+					<div class="left" style="width: 60%;">
+						<ul style=" padding:20px 0 30px 0;">
+							<li>(fast) vollständig responsive</li>
+							<li>neue Buttons links oben</li>
+						</ul>
+					<img src="assets/be_responsive_tablet.png" style="border: none; margin-right: 40px;" width="600px"/>
+
+					</div>
+					<img src="assets/be_responsive_mobile.png" style="border: none; float:right;margin-right: 40px;" width="250px"/>
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+				<section data-transition="fade">
+					<h1>Backend UI - Weitere Beispiele</h1>
+					<div class="right" style="width:25%; margin: 10px 40px 0 10px; padding:0;" >
+						<p>
+							<small>Element Browser</small><br >
+							<img src="assets/be_responsive_element-browser.png" style="margin-top: 0;" width="150px">
+						</p>
+					</div>
+					<div class="right" style="width:25%; margin: 10px 40px 0 10px; padding:0;" >
+						<p>
+							<small>Modul "Liste"</small><br />
+							<img src="assets/be_responsive_list-module.png" width="200px" style="margin-top: 0;">
+						</p>
+					</div>
+					<div class="right" style="width:25%; margin: 10px 40px 0 10px; padding:0;">
+						<p>
+							<small>Modul "Reports"</small><br />
+							<img src="assets/be_responsive_reports-module.png" style="margin-top: 0;">
+						</p>
+					</div>
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+			<section data-transition="fade">
+				<h1>Backend UI</h1>
+				<div class="left">
+					<h2>Fav-Icon</h2>
+
+					<p><small>bisher: TYPO3-Logo</small></p>
+					<p><small>jetzt: individuell möglich</small></p>
+					<br />&nbsp;
+					<h2>Backend-Logo</h2>
+
+					<p><small>bisher: Konfiguration im TBE_STYLES</small></p>
+					<p><small>jetzt: im BE in der Extension-Konfiguration</small></p>
+				</div>
+
+				<div class="right">
+					<img src="assets/ext_backend-be-config.png" width="100%">
+				</div>
+
+				<div class="footer">
+					<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+					<div class="middle"></div>
+					<div class="right"><img src="lib/img/typo3-white.svg"></div>
+				</div>
+
+				<aside class="notes">
+					<ul>
+						<li></li>
+					</ul>
+				</aside>
+			</section>
+
+				<section data-transition="fade">
+					<h1>Language Handling</h1>
+					<div>
+						<h2>Free vs. Connected Mode</h2>
+					</div>
+
+					<div>
+						<h2> </h2>
+						<p></p>
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>Free vs. Connected Mode: zeigen</li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section data-transition="fade">
+					<h1>Backend UI: Scheduler</h1>
+					<div>
+						<h2>Run task at next cron run</h2>
+					<p style="text-align:center">
+						<img src="assets/scheduler_next-cron.png" width="600px">
+					</p>
+					</div>
+
+
+					<div>
+						<h2>Collapse task groups</h2>
+						<p style="text-align:center">
+							<img src="assets/scheduler_collapse.png" width="600px">
+						</p>
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+
+
+			<section data-transition="fade">
+					<h1>Backend: Funktionen I</h1>
+					<div>
+						<h2>Modul "Seite"</h2>
+						<p>Drag & Drop kann jetzt auch Elemente kopieren</p>
+						<p>Strg bzw. Ctrl-Taste beim Ziehen gedrückt halten</p>
+						<br />
+					</div>
+					<div class="fragment">
+						<h2>Modul "Papierkorb"</h2>
+						<p>Admins können rekursiv Seiten wieder herstellen</p>
+						<p style="text-align:center;">
+							<img style="border:none;" src="assets/recycler.png" width="60%" />
+						</p>
+					</div>
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>Änderung beim Cache löschen, wie jedes Release </li>
+						</ul>
+					</aside>
+				</section>
+
+
+
+
+				<section data-transition="fade">
+					<h1>Backend: Funktionen II</h1>
+					<div>
+						<h2>Backend-Layout</h2>
+						<p>Layout - Wizard jetzt inline</p>
+						<p style="text-align:center;">
+							<img style="border:none;" src="assets/belayouts.png" width="60%" />
+						</p>
+					</div>
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>vorher war er in einem PopUp- Fenster</li>
+							<li>ansonsten, wie bekannt</li>
+						</ul>
+					</aside>
+				</section>
+
+
+
+				<section data-transition="fade">
+					<h1>Backend: Funktionen III</h1>
+					<div>
+						<h2>Linkservice</h2>
+						<p>neue Syntax: t3://page | file | folder</p>
+						<p>neue Typen via Linkhandler</p>
+						<p>verbesserte Linkfelder</p>
+						<p style="text-align:center;">
+							<img src="assets/link-1.png" style="display: inline-block; width:45%">
+							<img src="assets/link-2.png" style="border:none; display: inline-block; width:45%;margin-left:15px;">
+						</p>
+					</div>
+					<div>
+						<h2>Linkhandler</h2>
+						<p>vollständig im Core</p>
+						<p>Konfiguration analog der Extension</p>
+					</div>
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+
+
+			<section data-transition="fade">
+					<h1>Backend: Funktionen IV</h1>
+					<div>
+						<p class="right">
+						<img src="assets/page_paste-icon.png" style="display: inline-block; width:100%;">
+						</p>
+						<h2>Modul "Seite": Zwischenablage</h2>
+						<p>Paste Icon in Modul "Seite"</p>
+					</div>
+					<div style="clear:both;">
+						<p class="right">
+						<img src="assets/language_remove.png" style="display: inline-block; width:100%;">
+						</p>
+						<h2>Modul "Sprachen": Löschen</h2>
+						<p>Sprachdateien können entfernt werden</p>
+					</div>
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>Sprachdateien können jetzt auch entfernt werden</li>
+							<li>bisher nur ein deaktivieren mögich, Dateien blieben auf dem Dateisystem</li>
+						</ul>
+					</aside>
+				</section>
+
+
+			<section data-transition="fade">
+				<section>
+				<h1>Backend: Image Manipulation</h1>
+				<div>
+					<h2>Tool UI</h2>
+					<ul>
+						<li>Varianten möglich</li>
+						<li>individuelle Seitenverhältnisse </li>
+					</ul>
+				</div>
+
+				<div>
+					<div class="left">
+						<img src="assets/image-cropping_editor.png" style="display: inline-block; width:100%;">
+					</div>
+					<div class="right">
+						<img src="assets/image-cropping_variants.png" style="display: inline-block; width:100%;">
+					</div>
+				</div>
+				</section>
+				<section>
+					<h1>Backend: Image Manipulation</h1>
+					<div>
+						<h2>Konfiguration im TCA</h2>
+						<pre><code class="html" style="font-size:0.7em; line-height: 1.1em">// EXT:template/Configuration/TCA/Overrides/sys_file_reference.php
+$GLOBALS['TCA']['sys_file_reference']['columns']['crop']['config'] = [
+    'type' => 'imageManipulation',
+    'cropVariants' => [
+        'default' => [
+            'title' => 'Standard-Cropping',
+            'allowedAspectRatios' => [
+                'NaN' => [
+                    'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                    'value' => 0.0
+                ],
+                '2:1' => [
+                    'title' => "2:1",
+                    'value' => 2 / 1
+                ],
+                '1:2' => [
+                    'title' => '1:2',
+                    'value' => 1 / 2
+                ],
+                '3:1' => [
+                    'title' => '3:1',
+                    'value' => 3 / 1
+                ],
+                '1:3' => [
+                    'title' => '1:3',
+                    'value' => 1 / 3
+                ],
+                '16:9' => [
+                    'title' => '16:9',
+                    'value' => 16 / 9
+                ]
+            ]
+        ]
+    ]
+];</code></pre>
+					</div>
+
+				</section>
+
+
+				<section>
+					<h1>Backend: Image Manipulation</h1>
+					<div>
+						<h2>Konfiguration im Page-TSconfig</h2>
+						<p>
+						<pre><code style="font-size:0.8em; line-height: 1.2em">TCEFORM.sys_file_reference.crop.config.cropVariants {
+    default {
+        title = Default desktop
+        selectedRatio = NaN
+        allowedAspectRatios {
+            NaN {
+                title = free
+                value = 0.0
+            }
+        }
+    }
+    specialMobile {
+        title = Our special mobile variant
+        selectedRatio = NaN
+        allowedAspectRatios {
+            4:3 {
+                title = ratio 4/3
+                value = 1.3333333
+            }
+        }
+    }</code></pre>
+					</div>
+				</section>
+
+
+				<div class="footer">
+					<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+					<div class="middle"></div>
+					<div class="right"><img src="lib/img/typo3-white.svg"></div>
+				</div>
+				<aside class="notes">
+					<ul>
+						<li>V7 Cropping Tool</li>
+						<li>V8 reloaded</li>
+					</ul>
+				</aside>
+			</section>
+
+
+
+			<section data-transition="fade">
+					<h1>Backend: Caches I</h1>
+					<div>
+						<h2>System-Menü</h2>
+						<img style="float:right; border:none; margin-right:40px;" src="assets/caches.png" width="250px " />
+						<ul style="float:left;">
+							<li>Frontend Caches</li>
+							<li>System Caches </li>
+							<li>InstallTool</li>
+						</ul>
+					</div>
+					<div class="fragment" style="clear:both;">
+						<img style="float:right; border:none; margin-right:100px;" src="assets/caches_context-menu.png" width="150px " />
+						<br /><h2>Kontext-Menü</h2>
+						<p>Löschen des Seiten-Caches auch im <br /> Kontext-Menü möglich</p>
+					</div>
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>InstallTool zusätzlich Opcode-Caches separat</li>
+						</ul>
+					</aside>
+				</section>
+
+
+
+				<section data-transition="fade">
+					<h1>Backend: Caches II</h1>
+					<div>
+						<h2>PECL-Module "memcached"</h2>
+						<ul>
+							<li>zuätzliches PECL - Modul</li>
+							<li>Konfiguration in der AdditionalConfiguration</li>
+						</ul>
+
+					</div>
+					<div class="fragment">
+						<h2>Reorganisation 'typo3temp'</h2>
+						<pre><code>/typo3temp/
+/typo3temp/assets/
+/typo3temp/assets/js
+/typo3temp/assets/images
+/typo3temp/assets/css
+/typo3temp/assets/compressed
+/typo3temp/assets/_processed_
+/typo3temp/var/
+/typo3temp/var/Cache
+/typo3temp/var/ExtensionManager
+/typo3temp/var/InstallToolSessions
+/typo3temp/var/charset
+/typo3temp/var/locks
+/typo3temp/var/logs
+/typo3temp/var/transient</code></pre>
+
+					</div>
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>Cache BE arbeitet mit beiden PECL Modulen</li>
+							<li>Verhalten aber so wie bisher; Muss explizit konfiguriert werden</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section data-transition="fade">
+					<h1>Symfony Console</h1>
+					<div>
+						<h2>Aufruf</h2>
+						<p>mit composer</p>
+						<pre><code>bin/typo3 backend:lock http://www.mydomain.com/maintenance.html</code></pre>
+						<p>ohne composer</p>
+						<pre><code>typo3/sysext/core/bin/typo3 backend:lock http://www.mydomain.com/maintenance.html</code></pre>
+					</div>
+					<div>
+						<h2>Registerung eines Kommandos</h2>
+						<pre><code class="php">return [
+    'backend:lock' => [
+        'class' => \TYPO3\CMS\Backend\Command\LockBackendCommand::class
+    ],
+    'referenceindex:update' => [
+        'class' => \TYPO3\CMS\Backend\Command\ReferenceIndexUpdateCommand::class
+    ]
+];</code></pre>
+						<p style="margin-left:45px;"><small>Datei: EXT:meine_extension/Configuration/Commands.php</small></p>
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>Ablösung von cli_dispatch.sh</li>
+							<li>Syntax für die Sub Kommandos bleibt die gleiche</li>
+						</ul>
+					</aside>
+				</section>
+
+
+
+
+				<section data-transition="fade">
+					<h1>InstallTool</h1>
+					<div class="left">
+					<h2>Upgrade-Wizards resetten</h2>
+					<p><img src="assets/install-tool_reset-wizards.png" style="margin:0;"><img
+							src="assets/install-tool_reset-wizards-footer.png" style="margin-top:0;"/></p>
+					</div>
+
+					<div class="right">
+					<h2>Upgrade Analysis</h2>
+					<p><img src="assets/install-tool_upgrade.png"/></p>
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section data-transition="fade">
+					<h1>InstallTool</h1>
+					<div>
+						<h2>Notwendige Änderungen am TCA </h2>
+						<ul>
+							<li>Analyse des TCA der installierten Extensions</li>
+							<li>Ausgabe der notwendigen / empfohlenen Änderungen</li>
+						</ul>
+						<p style="text-align:center">
+							<img src="assets/install-tool_tca-migrations.png" width="700px"/>
+						</p>
+					</div>
+
+					<div>
+						<h2> </h2>
+						<p></p>
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section data-transition="fade">
+					<h1>InstallTool</h1>
+					<div>
+						<h2>Generierung der Autoload-Dateien</h2>
+						<p>Nur im "Non Composer"-Mode</p>
+						<p>Dateien im Verzeichnis "typo3conf"</p>
+					</div>
+
+					<div>
+						<h2> </h2>
+						<p></p>
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>Autoload Dateien in typo3conf, da autoload-Dateien keine Caches sind, sondern zum Programm-Code gehören.</li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section data-transition="fade">
+					<h1>Frontend</h1>
+					<div>
+						<h2>CE "Filelinks"</h2>
+						<p>Titel statt Dateiname (falls vorhanden)</p>
+					</div>
+
+					<div>
+						<h2>Seitentyp "Shortcut"</h2>
+						<p>übernimmt jetzt alle Parameter</p>
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+
+
+				<section data-transition="fade">
+					<h1>EXT:reports</h1>
+					<div class="right" style="width:30%">
+
+						<img src="assets/reports_scheduler-task-top.png"  style="margin-bottom:0"/><img
+							src="assets/reports_scheduler-task-bottom.png" style="margin-top:0"></div>
+					<div class="left" style="width: 50%; margin-top:40px;">
+						<h2>E-Mail-Benachrichtigungen</h2>
+						<ul>
+						<li>Task für den Scheduler</li>
+						<li>Liste von E-Mail-Adressen</li>
+						</ul>
+					</div>
+					<div class="left" style="width: 50%; margin-top: 80px;">
+						<h2>UTF-8 Warnung</h2>
+						<p>Zeichensatz des Servers wird verwendet</p>
+						<p>Inhalte in UTF-8 gespeichert</p>
+						<p>TS-Option "config.renderCharset" entfernt </p>
+					</div>
+
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section data-transition="fade">
+					<h1>TypoScript</h1>
+					<div>
+						<h2>config.locale_all</h2>
+						<p>Fallback kann jetzt konfiguriert werden</p>
+						<p>Kommasepatierte Liste des Locales</p>
+					</div>
+
+					<div>
+						<h2>Zugriff auf Flexform</h2>
+						<div><pre><code>lib.flexformContent = CONTENT
+lib.flexformContent {
+    table = tt_content
+    select {
+       pidInList = this
+    }
+
+    renderObj = COA
+    renderObj {
+        10 = TEXT
+        10 {
+            data = flexform: pi_flexform:settings.categories
+        }
+    }
+}</code></pre></div>
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section data-transition="fade">
+					<h1>Page-TSconfig</h1>
+					<div>
+						<h2>Such-Ebenen konfigurierbar</h2>
+						<p>gilt für Suche im Modul "Seite" und Modul "Liste"</p>
+
+						<pre><code>mod.web_list.searchLevel.items {
+    -1 = EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.searchLevel.infinite
+    0 = EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.searchLevel.0
+    1 = EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.searchLevel.1
+    2 = EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.searchLevel.2
+    3 = EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.searchLevel.3
+    4 = EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.searchLevel.4
+}					</code></pre>
+
+						<h2>Alle Tabellen verstecken</h2>
+						<p>bisher: nur ausblenden einzelner Tabellen<br />
+							jetzt: alle ausblenden und einzelne aktivieren</p>
+						<div><pre><code>mod.web_list.hideTables = *
+mod.web_list.table.tx_cal_event.hideTable = 0					</code></pre></div>
+</div>
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section data-transition="fade">
+					<h1>Page-TSconfig</h1>
+					<div>
+						<h2>Vorschau von Inhaltselementen</h2>
+						<p>bisher: nur über einen Hook</p>
+						<p>jetzt: über Page-TSconfig</p>
+						<p>Alle Felder des Flexform über die Fluid-Array "pi_flexform_transformed" erreichbar</p>
+						<p><pre><code>mod.web_layout.tt_content.preview.list.example = EXT:site_mysite/Resources/Private/Templates/ \
+      Preview/ExamplePlugin.html					</code></pre>
+					</div>
+
+					<div style="margin-top: 50px;">
+						<h2>Element-Browser deaktivieren</h2>
+						<p>Page TSconfig</p>
+						<pre><code>TCEFORM.table_name.field_name.config.appearance.elementBrowserEnabled = 0</code></pre>
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section data-transition="fade">
+					<h1>User-TSconfig</h1>
+					<div>
+						<h2>Element-Browser deaktivieren</h2>
+						<p>über Option:</p>
+						<pre><code>page.TCEFORM.table_name.field_name.config.appearance.elementBrowserEnabled = 0</code></pre>
+					</div>
+
+					<div class="fragment" style="margin-top: 30px;">
+						<h2>Modul "Dateiliste" - max. Dateianzahl je Seite</h2>
+						<p>Festlegen mit</p>
+						<pre><code>options.file_list.filesPerPage = 40</code></pre>
+					</div>
+
+					<div class="fragment"   style="margin-top: 30px;">
+						<h2>Ex-/Import - Funktion deaktiviert</h2>
+						<p>Reaktivieren mit:</p>
+						<pre><code>options.impexp.enableImportForNonAdminUser = 1</code></pre>
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section data-transition="fade">
+					<h1>FLUID</h1>
+					<div>
+						<div><h2>Standalone FLUID</h2>
+						<p>eigenes Composer-Package</p>
+						</div>
+
+						<div>
+							<h2>SelectViewHelper</h2>
+							<h3>f:form.select.option</h3>
+							<p>bisher: Übergabe der Argumente nur als Array</p>
+							<p>jetzt: auch als Kindelemente</p>
+							<h3>f:form.select.optgroup</h3>
+							<p>neu: Gruppierung der Optionen</p>
+						</div>
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>Standalone: nur noch TYPO3 CMS spez. Dinge in der sysext enthalten</li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section data-transition="fade">
+					<h1>FLUID</h1>
+								<div>
+									<h2>StripTagsViewHelper</h2>
+									<p>neue Option: allowedTags</p>
+								</div>
+					<div style="margin-top:20px;">
+						<h2>Access ObjectStorage as Array in Fluid</h2>
+						<p>bisher: nur über Objekt-Namen</p>
+						<p>jetzt: auch über den Index oder einen Counter</p>
+						<div><pre><code>{myObject.objectstorageproperty.array.4}
+{myObject.objectstorageproperty.array.{dynamicIndex}}</code></pre>
+						</div>
+					</div>
+					<div style="margin-top:20px;">
+						<h2>BytesViewHelper</h2>
+						<div>
+							neuer Parameter: units
+						</div>
+					</div>
+							<div class="footer">
+								<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+								<div class="middle"></div>
+								<div class="right"><img src="lib/img/typo3-white.svg"></div>
+							</div>
+
+							<aside class="notes">
+								<ul>
+									<li>Individuelle Liste von Einheiten (kommesepariert) </li>
+								</ul>
+							</aside>
+						</section>
+
+
+				<section data-transition="fade">
+					<h1>FLUID</h1>
+					<div class="left">
+						<h2>Fluid - Debug</h2>
+						<p>Adminpanel hat neue Option</p>
+
+						<img src="assets/adminpanel_fluid-debug_output.png"/></div>
+
+					<div class="right">
+						<h2> </h2>
+						<img src="assets/adminpanel_fluiddebug.png" width="300px">
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+
+				<section data-transition="fade">
+							<h1>Fluid Styled Content</h1>
+							<div>
+								<h2>"Streamlined" mit CSC</h2>
+								<p>gleiche Felder</p>
+								<p>gleiche Content-Element</p>
+							</div>
+							<div>
+								<h2>Default-Layout</h2>
+								<p>bisher: HeaderFooter, ContentFooter, et al. </p>
+								<p>jetzt: alle CE das gleiche Layout</p>
+								<p>neu: "Drop-Ins"</p>
+								<pre><code>Partials/DropIn/After/All.html
+Partials/DropIn/Before/All.html</code></pre>
+							</div>
+
+							<div class="footer">
+								<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+								<div class="middle"></div>
+								<div class="right"><img src="lib/img/typo3-white.svg"></div>
+							</div>
+
+							<aside class="notes">
+								<ul>
+									<li>Streamlining: BE-Konfig anpassen</li>
+									<li>Drop-In-Partial: automatisch in header oder vor Ende des Bodytags</li>
+								</ul>
+							</aside>
+						</section>
+
+
+				<section data-transition="fade">
+					<h1>Entwicklung</h1>
+					<div>
+						<h2>Javascript</h2>
+
+						<ul>
+							<li>Typescript im TYPO3 core</li>
+							<li>Unittests für Javascript möglich</li>
+						</ul>
+
+						<h2 style="margin-top: 30px">Testing Framework</h2>
+
+						<ul>
+							<li>eigenes Composer-Package</li>
+							<li>Namespace: TYPO3\TestingFramework\Core</li>
+						</ul>
+
+						<h2 style="margin-top: 30px">Session Storage Framework</h2>
+						<ul>
+							<li>verschiedene Backends vorhanden</li>
+							<li>eigene Implementationen möglich</li>
+						</ul>
+					</div>
+
+					<div>
+						<h2> </h2>
+						<p></p>
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>Typescript: Javascript Präcompiler mit Zusatzfunktionen</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section data-transition="fade">
+					<h1>Credits</h1>
+					<div style="text-align:center;">
+						<h2 style="margin-top: 150px;">TYPO3 Core-Team</h2>
+						<h2 style="margin-top: 50px;">Allen TYPO3 Contributors</h2>
+						<h2 style="margin-top: 50px;">in2code GmbH</h2>
+					</div>
+
+					<div>
+						<h2> </h2>
+						<p></p>
+					</div>
+
+					<div class="footer">
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
+						<div class="middle"></div>
+						<div class="right"><img src="lib/img/typo3-white.svg"></div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+
+
 			</div>
 		</div>
 
@@ -40,12 +1242,27 @@
 
 				<section data-transition="fade">
 					<h1></h1>
-					<p>And it starts again.</p>
+					<div>
+					<h2> </h2>
+					<p></p>
+					</div>
+
+					<div>
+					<h2> </h2>
+					<p></p>
+					</div>
+
 					<div class="footer">
-						<div class="left">&copy; XXXX Your Name here</div>
+						<div class="left">&copy; 2017 Marcus Schwemer (<a href="https://www.in2code.de/">in2code GmbH</a> // <a href="https://typo3worx.eu/">typo3worx.eu</a>)</div>
 						<div class="middle"></div>
 						<div class="right"><img src="lib/img/typo3-white.svg"></div>
 					</div>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
 				</section>
 
 		-->
@@ -59,6 +1276,7 @@
 				history: true,
                 center: false,
                 backgroundTransition: 'zoom',
+				slideNumber: 'c/t',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
