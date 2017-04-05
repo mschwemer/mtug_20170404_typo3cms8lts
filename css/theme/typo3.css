@@ -58,7 +58,7 @@
 
 .reveal .slides .footer {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 0.3em;
+  font-size: 0.40em;
   font-weight: 100;
   color: white;
   padding: 10px 40px 10px 40px;
@@ -69,6 +69,13 @@
   background-color: #ff8700;
   z-index: 500;
   text-align: right; }
+
+.reveal .slides .footer a {
+  color: white;
+  text-decoration: underline; }
+
+.reveal .slides .footer a:hover {
+  color: #aaa; }
 
 .reveal .slides .footer .left {
   text-align: left;
